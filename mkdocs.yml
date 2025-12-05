@@ -1,4 +1,7 @@
 site_name: Simulacres d'examen PRG 25/26
+docs_dir: 'md'
+site_dir: 'docs'
+
 theme:
   name: material
   language: ca

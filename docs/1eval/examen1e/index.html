@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="../solucions1e/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Examen - Simulacres d'examen PRG 25/26</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="coral" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#estructura-dun-programa" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../.." title="Simulacres d&#39;examen PRG 25/26" class="md-header__button md-logo" aria-label="Simulacres d'examen PRG 25/26" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Simulacres d'examen PRG 25/26
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Examen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="coral" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Primera Aval
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../2eval" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Segona Aval
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Simulacres d&#39;examen PRG 25/26" class="md-nav__button md-logo" aria-label="Simulacres d'examen PRG 25/26" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Simulacres d'examen PRG 25/26
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Primera Aval
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Primera Aval
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Examen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-dun-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟦 Estructura d’un programa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟦 Estructura d’un programa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-ra01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test RA01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercici-ra01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici RA01
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escriure-i-provar-programes-senzills" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩 Escriure i provar programes senzills
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟩 Escriure i provar programes senzills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-ra02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test RA02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercici-ra02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici RA02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercici-avancat-ra02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici avançat RA02
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructures-de-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟨 Estructures de control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟨 Estructures de control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-ra03" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test RA03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercici-ra03" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici RA03
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructures-de-dades" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟦 Estructures de dades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟦 Estructures de dades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-ra06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test RA06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercici-ra06" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici RA06
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solucions1e/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Solucions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rubrica1e/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rubrica correcció
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2eval" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Segona Aval
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="examen1e.pdf" title="PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.5h1v3h-1v-3m-5 1h1v-1H7v1M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2M9.5 10.5A1.5 1.5 0 0 0 8 9H5.5v6H7v-2h1a1.5 1.5 0 0 0 1.5-1.5v-1m5 0A1.5 1.5 0 0 0 13 9h-2.5v6H13a1.5 1.5 0 0 0 1.5-1.5v-3m4-1.5h-3v6H17v-2h1.5v-1.5H17v-1h1.5V9z"></path></svg></a>
+                
+                  
+
+
+
+  <h1>Examen</h1>
+
+<div class="admonition abstract">
+<p class="admonition-title">Simulacre d'examen</p>
+<p>Aquest document presenta un possible examen corresponent a la primera avaluació. 
+Els exercicis s'han de realitzar en format paper amb l'objectiu de reproduir, de la manera més fidel possible, les condicions reals de l'examen.</p>
+</div>
+<hr />
+<h2 id="estructura-dun-programa">🟦 Estructura d’un programa<a class="headerlink" href="#estructura-dun-programa" title="Permanent link">&para;</a></h2>
+<h3 id="test-ra01">Test RA01<a class="headerlink" href="#test-ra01" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>   </p>
+<ol>
+<li>
+<p>Quina d’aquestes opcions <strong>NO</strong> és un tipus de dada bàsic?<br />
+   A) int<br />
+   B) double<br />
+   C) literal<br />
+   D) char  </p>
+</li>
+<li>
+<p>Un <strong>comentari</strong> en Java que ocupa només una línia es fa amb:<br />
+   A) #<br />
+   B) //<br />
+   C) /**/<br />
+   D) --  </p>
+</li>
+<li>
+<p>Quin operador s’utilitza per comparar si dues <strong>variables String</strong> tenen el mateix valor?</p>
+<p>A) =<br />
+B) ==<br />
+C) !=<br />
+D) equals</p>
+</li>
+<li>
+<p>Quin és el nom correcte per a una <strong>variable</strong>?<br />
+   A) 3valor<br />
+   B) 1valor-inici<br />
+   C) valorInicial<br />
+   D) valor inicial  </p>
+</li>
+<li>
+<p>Quin d’aquests és un <strong>numèric enter</strong>?<br />
+   A) '3'<br />
+   B) "3"<br />
+   C) 3<br />
+   D) 3.0  </p>
+</li>
+</ol>
+<h3 id="exercici-ra01">Exercici RA01<a class="headerlink" href="#exercici-ra01" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>
+<strong>Enunciat:</strong><br />
+Escriu un programa Java que declare dues variables enteres, les some i mostre el resultat en pantalla amb un comentari explicant què fa el programa.</p>
+<hr />
+<h2 id="escriure-i-provar-programes-senzills">🟩 Escriure i provar programes senzills<a class="headerlink" href="#escriure-i-provar-programes-senzills" title="Permanent link">&para;</a></h2>
+<h3 id="test-ra02">Test RA02<a class="headerlink" href="#test-ra02" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>   </p>
+<ol>
+<li>
+<p>Quina instrucció mostra text per pantalla?<br />
+   A) System.read();<br />
+   B) System.get();<br />
+   C) System.out.println();<br />
+   D) Console.write();  </p>
+</li>
+<li>
+<p>Quina instrucció permet <strong>llegir dades</strong> des del teclat?<br />
+    A) System.out.println()
+    B) keyboard.read()
+    C) scanner.nextLine()
+    D) console.input() </p>
+</li>
+<li>
+<p>Quin tipus de dada rep el mètode <code>nextInt()</code>?<br />
+   A) boolean<br />
+   B) double<br />
+   C) int<br />
+   D) String  </p>
+</li>
+<li>
+<p>Quina instrucció serveix per guardar dades en una variable?<br />
+A) System.out.println<br />
+B) Scanner<br />
+C) =<br />
+D) input()  </p>
+</li>
+<li>
+<p>Quin dels següents programes <strong>compila correctament</strong>?<br />
+   A) <code>println("Hola");</code><br />
+   B) <code>System.out.println("Hola");</code><br />
+   C) <code>Console.out("Hola");</code><br />
+   D) <code>Show("Hola");</code>  </p>
+</li>
+</ol>
+<h3 id="exercici-ra02">Exercici RA02<a class="headerlink" href="#exercici-ra02" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>
+<strong>Enunciat:</strong><br />
+Fes un programa que demane per teclat el <strong>nom</strong> de l’usuari i la <strong>seua edat</strong>.<br />
+Després, el programa ha de mostrar el missatge:</p>
+<p><strong>"Hola \<nom>, vas nàixer l’any \<any>."</strong></p>
+<p>Suposant que <strong>estem en 2026</strong></p>
+<h3 id="exercici-avancat-ra02">Exercici avançat RA02<a class="headerlink" href="#exercici-avancat-ra02" title="Permanent link">&para;</a></h3>
+<p><em>(2punts)</em>
+<strong>Enunciat:</strong>  </p>
+<p>Volem comprovar si els noms d’usuari que introdueixen els clients són massa llargs.</p>
+<p>Fes un programa que tinga <strong>dues funcions</strong>:</p>
+<ul>
+<li><code>getLongitud(String text)</code> → retorne el número de caràcters d’un text  </li>
+<li><code>compararLongitud(int l1, int l2)</code> → retorne el major dels dos valors  </li>
+</ul>
+<p>El <code>main()</code> ha de:</p>
+<ol>
+<li>Demanar per teclat <strong>dos noms</strong> (dos Strings).  </li>
+<li>Utilitzar <code>getLongitud()</code> per obtindre la longitud de cadascun.  </li>
+<li>Mostrar quants caràcters té cada nom.  </li>
+<li>Utilitzar <code>compararLongitud()</code> per saber <strong>quin dels dos noms és més llarg</strong> i mostrar-lo per pantalla.</li>
+</ol>
+<p><strong>Exemple d’eixida esperada:</strong></p>
+<div class="codehilite"><pre><span></span><code>Introdueix primer nom: Marta
+Introdueix segon nom: Alejandro
+
+&quot;Marta&quot; té 5 lletres.
+&quot;Alejandro&quot; té 9 lletres.
+El nom més llarg és: Alejandro
+</code></pre></div>
+
+<p><strong>Pista:</strong><br />
+- Pots obtindre la longitud d’un String amb: <code>nom.length();</code><br />
+- Les funcions han de retornar valors (no imprimir directament).</p>
+<hr />
+<h2 id="estructures-de-control">🟨 Estructures de control<a class="headerlink" href="#estructures-de-control" title="Permanent link">&para;</a></h2>
+<h3 id="test-ra03">Test RA03<a class="headerlink" href="#test-ra03" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>   </p>
+<ol>
+<li>
+<p>Quina instrucció permet executar un bloc de codi només si una condició es compleix?<br />
+   A) for<br />
+   B) if<br />
+   C) int<br />
+   D) String  </p>
+</li>
+<li>
+<p>Quina és la forma correcta d’una estructura <code>while</code>?<br />
+   A) <code>while x&lt;5 { }</code><br />
+   B) <code>while (x&lt;5) { }</code><br />
+   C) <code>while (x&lt;5); { }</code><br />
+   D) <code>repeat (x&lt;5) { }</code>  </p>
+</li>
+<li>
+<p>Quin codi mostra els números del 1 al 10?<br />
+   A) <code>for (int i = 1; i &lt;= 10; i++)</code><br />
+   B) <code>for (int i = 0; i &lt; 10; i--)</code><br />
+   C) <code>if (i &lt; 10)</code><br />
+   D) <code>while (10)</code></p>
+</li>
+<li>
+<p>Quina d’aquestes estructures permet repetir instruccions mentre una condició siga certa?<br />
+   A) if<br />
+   B) for<br />
+   C) int<br />
+   D) String  </p>
+</li>
+<li>
+<p>Quina estructura permet triar entre una condició i una alternativa?<br />
+   A) if / else<br />
+   B) import<br />
+   C) class<br />
+   D) new</p>
+</li>
+</ol>
+<h3 id="exercici-ra03">Exercici RA03<a class="headerlink" href="#exercici-ra03" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>
+<strong>Enunciat:</strong><br />
+Fes un programa que demane per teclat un número i mostre si és <strong>positiu, negatiu o zero</strong></p>
+<hr />
+<h2 id="estructures-de-dades">🟦 Estructures de dades<a class="headerlink" href="#estructures-de-dades" title="Permanent link">&para;</a></h2>
+<h3 id="test-ra06">Test RA06<a class="headerlink" href="#test-ra06" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>   </p>
+<ol>
+<li>
+<p>Quin d’aquests declara correctament un vector d’enters?<br />
+   A) <code>int numeros[];</code><br />
+   B) <code>vector int numeros;</code><br />
+   C) <code>int numeros = [];</code><br />
+   D) <code>int[];</code>  </p>
+</li>
+<li>
+<p>Quin és l’índex del <strong>primer element</strong> d’un vector?<br />
+   A) 0<br />
+   B) 1<br />
+   C) -1<br />
+   D) Depén  </p>
+</li>
+<li>
+<p>Un <strong>ArrayList</strong> pertany a:<br />
+   A) <code>java.random</code><br />
+   B) <code>java.util</code><br />
+   C) <code>java.array</code><br />
+   D) <code>java.collections</code>  </p>
+</li>
+<li>
+<p>Quin mètode <strong>afegeix</strong> un element a un ArrayList?<br />
+   A) add()<br />
+   B) insert()<br />
+   C) push()<br />
+   D) put()  </p>
+</li>
+<li>
+<p>Quin element permet <strong>recórrer</strong> tots els valors d’un vector?<br />
+   A) if<br />
+   B) main<br />
+   C) for<br />
+   D) new  </p>
+</li>
+</ol>
+<h3 id="exercici-ra06">Exercici RA06<a class="headerlink" href="#exercici-ra06" title="Permanent link">&para;</a></h3>
+<p><em>(1punt)</em>
+<strong>Enunciat:</strong><br />
+Fes un programa que cree un vector de 5 números enters, demane cada número per teclat i després mostre el <strong>valor màxim i el mínim</strong>.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna a l'inici
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://google.com" target="_blank" rel="noopener" title="google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "toc.integrate", "content.code.copy", "content.tabs.link", "search.highlight", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
