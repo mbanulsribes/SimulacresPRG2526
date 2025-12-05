@@ -49,4 +49,4 @@ extra:
 
 plugins:
     - search
-    #- page-to-pdf
+    - page-to-pdf
