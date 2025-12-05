@@ -1,0 +1,52 @@
+site_name: Simulacres d'examen PRG 25/26
+theme:
+  name: material
+  language: ca
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: coral
+      accent: blue
+  font:
+    text: Roboto
+    code: "Fira Code"
+
+
+nav:
+
+    - Primera Aval:
+      - Examen: 1eval/examen1e.md
+      - Solucions: 1eval/solucions1e.md
+      - Rubrica correcció: 1eval/rubrica1e.md
+    - Segona Aval: 2eval
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite
+  - footnotes
+  - def_list
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com
+    - icon: material/home
+      link: https://google.com
+
+plugins:
+    - search
+    #- page-to-pdf
