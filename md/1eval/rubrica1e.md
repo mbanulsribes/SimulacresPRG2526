@@ -21,7 +21,7 @@
 
 
 #### Qualificació
->Test RA01 (5 preguntes × 0,2) = ____ /1  
+> Test RA01 (5 preguntes → (encerts × 0,20) – (errors × 0,05)) = ____ /1
 >Exercici RA01 (4 preguntes × 0,25) = ____ /1  
 >
 >**TOTAL RA01 = ____ /2**  
@@ -59,7 +59,7 @@
 
 #### Qualificació
 
->Test RA02 (5 preguntes × 0,2) = ____ /1  
+>Test RA02 (5 preguntes → (encerts × 0,20) – (errors × 0,05)) = ____ /1
 >Exercici RA02 bàsic (5 preguntes × 0,2) = ____ /1  
 >Exercici RA02 avançat (5 preguntes × 0,2) = ____ /2  
 >
@@ -90,7 +90,7 @@
 
 #### Qualificació
 
->Test RA03 (5 preguntes × 0,2) = ____ /1  
+>Test RA03 (5 preguntes → (encerts × 0,20) – (errors × 0,05)) = ____ /1
 >Exercici RA03 (4 preguntes × 0,25) = ____ /1  
 >
 >**TOTAL RA03 = ____ /2**  
@@ -121,7 +121,7 @@
 
 #### Qualificació
 
->Test RA06 (5 preguntes × 0,2) = ____ /1  
+>Test RA06 (5 preguntes → (encerts × 0,20) – (errors × 0,05)) = ____ /1
 >Exercici RA06 (5 preguntes × 0,2) = ____ /1  
 >
 >**TOTAL RA06 = ____ /2**  
